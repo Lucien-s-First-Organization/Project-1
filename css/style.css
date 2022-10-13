@@ -9,8 +9,8 @@ body {
     background-size: auto;
     background-position: center;
     display:grid;
-    background-image: url("../Background/fighting-game.jpg");
-    background-color: #cccccc; 
+    background-image: url("/background/car-brands.jpg");
+    background-color: #d17b13; 
     align-items: center;
 
 }
@@ -19,7 +19,7 @@ p, h1, ol, label, input, #content {
     margin: 15px;
   }
 form {
-    background-color: black;
+    background-color: rgba(98, 0, 98, 0.519);
     display: inline-block;
     height: auto;
     text-align: left;
@@ -49,15 +49,15 @@ label{
         cursor: pointer;
 
 }
-#Super-Smash-Bros {
+#Volkswagen-Golf-R {
     box-sizing: border-box;
     width: 10%;
 }
-#Street-Fighter {
+#Mini-Johncooperworks {
     box-sizing: border-box;
     width: 10%;
 }
-#Mortal-Kombat {
+#Honda-Civic-Type-R{
     box-sizing: border-box;
     width: 10%;
 }
