@@ -9,7 +9,7 @@ body {
     background-size: auto;
     background-position: center;
     display:grid;
-    background-image: url("/background/car-brands.jpg");
+    background-image: url("../background/car-brands.jpg");
     align-items: center;
 
 }
