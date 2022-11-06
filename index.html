@@ -1,43 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html lang="en">
 <head>
-  <title>Polling sheet</title>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="css/style.css" />
-  <link rel="stylesheet" media="screen" href="css/meyersreset-and-normalize-form.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/styles-reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <script type="text/javascript" async src="js/main.js"></script>
 </head>
 <body>
-  <main id="content">
-    <form method="get" action="#null">
-      <h1>Hot Hatchbacks</h1>
-      <p>
-        Which hot hatchback is the best?!
-      </p>
-      <ol>
-        <li id="input-Volkswagen-Golf-R">
-          <input type="checkbox" id="Volkswagen-Golf-R" name="Volkswagen-Golf-R" value="action"/>
-          <label for="Volkswagen-Golf-R">Volkswagen Golf R.</label>
-          </li>
-          <li id="input-Mini-Johncooperworks">
-            <input type="checkbox" id="Mini-Johncooperworks" name="Mini-Johncooperworks" value="action"/>
-            <label for="Mini-Johncooperworks">Mini Cooper John Cooper Works</label>
-        </li>
-        <li id="input-Honda-Civic-Type-R">
-          <input type="checkbox" id="Honda-Civic-Type-R" name="Honda-Civic-Type-R" value="action"/>
-          <label for="Honda-Civic-Type-R">Honda Civic Type R</label>
-        </li>
-        <li id="input-email">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" pattern="^.+@.+$"/>
-        </li>
-        <li id="input-submit">
-          <input type="submit" name="submit" id="submit" value="Click to submit"/>
-        </li>
-      </ol>
+  <div id="wrapper">
+    <form action="#" method="post" >
+        <div class="row">
+            <h1>Sign-up</h1>
+            <div class="info">Complete the form below to sign-up</div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+              <label for="fname">FirstName<span class="required-input" title="This field is required">*</span></label>
+              <input type="text" class="textfield" name="fname" id="fname" placeholder="Enter Firstname" required="required"/>
+              <span id="fname-span"></span>
+              <small id="fname-small"></small>
+          </div>
+          <div class="col-3">
+              <label for="mname">MiddleName</label>
+              <input type="text" class="textfield" name="mname" id="mname" placeholder="Enter Middlename"/>
+              <span id="mname-span"></span>
+              <small></small>
+          </div>
+          <div class="col-3">
+              <label for="sname">Surname<span class="required-input" title="This field is required">*</span></label>
+              <input type="text" class="textfield" name="sname" id="sname" placeholder="Enter Surname" required="required"/>
+              <span id="sname-span"></span>
+              <small id="sname-small"></small>
+          </div>
+          <div class="clear-float"></div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <label for="dob">Date of Birth<span class="required-input" title="This field is required">*</span></label>
+                <input type="date" class="textfield" name="dob" id="dob" placeholder="Enter DOB" required="required"/>
+                <span></span>
+                <small></small>
+            </div>
+            <div class="col-3">
+                <label for="gender">Gender<span class="required-input" title="This field is required">*</span></label>
+                <select name="gender" class="select-field" id="gender" required="required">
+                    <option value="" selected="selected">Please Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="0">Other</option>
+                </select>
+                <p>&nbsp;</p>
+                <small></small>
+            </div>
+            <div class="col-3">
+                <label for="phone">Phone Number<span class="required-input" title="This field is required">*</span></label>
+                <input type="text" class="textfield" name="phone" id="phone" placeholder="Phone Number (123) 234-567" required="required"/>
+                <span id="phone-span"></span>
+                <small id="phone-small"></small>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <label for="address">Physical Address</label>
+                <input type="text" class="textfield" name="address" id="address" placeholder="Enter Address"/>
+                <span id="address-span"></span>
+            </div>
+            <div class="col-2">
+                <label for="email">Email Address<span class="required-input" title="This field is required">*</span></label>
+                <input type="email" class="textfield" name="email" id="email" placeholder="Email Address"/>
+                <span id="email-span"></span>
+                <small id="email-small"></small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <label for="username">Username</label>
+                <input type="text" class="textfield" name="username" id="username" placeholder="Enter Username"/>
+                <span id="user-span"></span>
+                <small id="user-small"></small>
+            </div>
+            <div class="col-3">
+                <label for="password">Password</label>
+                <input type="password" class="textfield" name="password" id="password" placeholder="Email Password"/>
+                <span id="pwd-span"></span>
+                <small id="pwd-small"></small>
+            </div>
+            <div class="col-3">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="textfield" name="confirm-password" id="confirm-password" placeholder="Confirm Password"/>
+                <span id="con-pwd-span"></span>
+                <small id="con-pwd-small"></small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <input type="checkbox" name="subscribe" id="subscribe"/>
+                <label for="subscribe" id="checkbox">Subscribe to weekly newsletters</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 centered">
+                <input type="submit" name="registerStudent" id="registerStudent" class="btn" value="register student"/>
+            </div>
+            <div class="col-2 centered">
+                <input type="reset" name="reset" id="reset" class="btn" value="reset form"/>
+            </div>
+            <p class="clear-float">&nbsp;</p>
+        </div>
+        <div class="clear-float">&nbsp;</div>
     </form>
-  </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
+  </div>
 </body>
 </html>

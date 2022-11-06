@@ -1,0 +1,216 @@
+/*Default wide screens*/
+body{
+    background-image: url("../img/bg6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+small{
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 3px;
+    border-radius: 5px;
+    /*border: 2px solid yellow;*/
+    width: 90%;
+    color: red;
+    font-family: "Times New Roman";
+}
+span img{
+    width: 25px;
+}
+h1{
+    font-size: 30px;
+    color: deeppink;
+    padding: 10px 0;
+}
+#wrapper{
+    width: 85%;
+    padding: 10px 5px 0px 20px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: "Cantarell Extra Bold";
+}
+.required-input{
+    color: red;
+    font-size: 16px;
+}
+label{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    text-transform: capitalize;
+    font-family: "Arial Black";
+    color: grey;
+}
+#checkbox{
+    display: inline;
+}
+.row{
+    width: 99%;
+    padding: 10px;
+}
+.col-1{
+    width: 99%;
+}
+.col-2{
+    width: 48%;
+    margin-right: 10px;
+}
+.col-3{
+    width: 32%;
+    margin-right: 5px;
+}
+.col-2 .textfield{
+    width: 85%;
+}
+
+.col-1, .col-2, .col-3{
+    padding: 10px 0;
+    float: left;
+    /*background-color: yellow;*/
+}
+
+.row.col-1, .row.col-2, .row.col-3{
+    float: left;
+}
+.clear-float{
+    clear: both;
+}
+.centered{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.textfield{
+    padding: 10px;
+    width: 75%;
+    border: 2px solid lightgrey;
+    font-size: 16px;
+}
+.select-field{
+    width: 85%;
+    padding: 10px;
+    border: 2px solid lightgrey;
+    background-color: transparent;
+}
+.btn{
+    background-color: deeppink;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Cantarell Extra Bold";
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: 2px solid transparent;
+}
+.btn:hover{
+    border: 2px solid lightgrey;
+    color: deeppink;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Extra small devices (phones, 600px and below) */
+    body{
+        background-image: url("../img/bg2.jpg");
+    }
+    #wrapper{
+        border-radius: 15px;
+    }
+    label{
+        display: none;
+    }
+    .col-1, .col-2, .col-3{
+        width: 98%;
+    }
+    #checkbox{
+        display: inline;
+    }
+    .textfield{
+        width: 85%;
+    }
+    .select-field{
+        width: 91%;
+    }
+    h1, .info{
+        text-align: center;
+    }
+    .btn{
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* Small devices (large mobile phones and portrait tablets, 601px and up) */
+    body{
+        background-image: url("../img/bg3.jpg");
+    }
+    .col-1, .col-2, .col-3{
+        width: 98%;
+    }
+    #checkbox{
+        display: inline;
+    }
+    .textfield{
+        width: 85%;
+    }
+    .select-field{
+        width: 91%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url("../img/bg4.jpg");
+    }
+    label{
+        color: orange;
+    }
+    .col-2{
+        width: 98%;
+    }
+    .col-3{
+        width: 49%;
+    }
+    #checkbox{
+        display: inline;
+    }
+    .textfield{
+        width: 85%;
+    }
+    .select-field{
+        width: 91%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        background-image: url("../img/bg5.jpg");
+    }.col-1{
+         width: 99%;
+     }
+    .col-2{
+        width: 48%;
+        margin-right: 10px;
+    }
+    .col-3{
+        width: 32%;
+        margin-right: 5px;
+    }
+    .textfield{
+        width: 75%;
+    }
+    .col-2 .textfield{
+        width: 85%;
+    }
+}
